@@ -9,8 +9,16 @@ import java.io.IOException;
 public class MainFormController {
     public AnchorPane pneStage;
 
-    public void initialize() throws IOException {
-        Parent root = FXMLLoader.load(this.getClass().getResource("/view/DashBoardForm.fxml"));
-        pneStage.getChildren().add(root);
+    public void initialize() {
+
+    }
+
+    public void navigate(){
+        try {
+            Parent root = FXMLLoader.load(this.getClass().getResource("/view/DashBoardForm.fxml"));
+            pneStage.getChildren().add(root);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
