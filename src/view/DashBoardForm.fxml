@@ -43,7 +43,7 @@
             </AnchorPane>
          </graphic>
       </Button>
-      <Button layoutX="643.0" layoutY="42.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="150.0" style="-fx-background-color: #A367BF;" AnchorPane.bottomAnchor="322.0" AnchorPane.leftAnchor="640.0" AnchorPane.rightAnchor="110.0" AnchorPane.topAnchor="45.0">
+      <Button layoutX="643.0" layoutY="42.0" mnemonicParsing="false" onMouseClicked="#pneSearchPayment_OnMouseClicked" prefHeight="90.0" prefWidth="150.0" style="-fx-background-color: #A367BF;" AnchorPane.bottomAnchor="322.0" AnchorPane.leftAnchor="640.0" AnchorPane.rightAnchor="110.0" AnchorPane.topAnchor="45.0">
          <graphic>
             <AnchorPane prefHeight="80.0" prefWidth="143.0">
                <children>
@@ -60,7 +60,7 @@
             </AnchorPane>
          </graphic>
       </Button>
-      <Button layoutX="377.0" layoutY="177.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="150.0" style="-fx-background-color: #7c7120;" AnchorPane.bottomAnchor="190.0" AnchorPane.leftAnchor="375.0" AnchorPane.rightAnchor="375.0" AnchorPane.topAnchor="177.0">
+      <Button layoutX="377.0" layoutY="177.0" mnemonicParsing="false" onMouseClicked="#pneSearchStudent_OnMouseClicked" prefHeight="90.0" prefWidth="150.0" style="-fx-background-color: #7c7120;" AnchorPane.bottomAnchor="190.0" AnchorPane.leftAnchor="375.0" AnchorPane.rightAnchor="375.0" AnchorPane.topAnchor="177.0">
          <graphic>
             <AnchorPane prefHeight="80.0" prefWidth="143.0">
                <children>
@@ -77,7 +77,7 @@
             </AnchorPane>
          </graphic>
       </Button>
-      <Button layoutX="138.0" layoutY="190.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="150.0" style="-fx-background-color: #AAB56B;" AnchorPane.bottomAnchor="190.0" AnchorPane.leftAnchor="110.0" AnchorPane.rightAnchor="640.0" AnchorPane.topAnchor="177.0">
+      <Button layoutX="138.0" layoutY="190.0" mnemonicParsing="false" onMouseClicked="#pneEditStudent_OnMouseClicked" prefHeight="90.0" prefWidth="150.0" style="-fx-background-color: #AAB56B;" AnchorPane.bottomAnchor="190.0" AnchorPane.leftAnchor="110.0" AnchorPane.rightAnchor="640.0" AnchorPane.topAnchor="177.0">
          <graphic>
             <AnchorPane prefHeight="80.0" prefWidth="143.0">
                <children>
@@ -94,7 +94,7 @@
             </AnchorPane>
          </graphic>
       </Button>
-      <Button layoutX="647.0" layoutY="176.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="150.0" style="-fx-background-color: #A1825E;" AnchorPane.bottomAnchor="190.0" AnchorPane.leftAnchor="640.0" AnchorPane.rightAnchor="110.0" AnchorPane.topAnchor="177.0">
+      <Button layoutX="647.0" layoutY="176.0" mnemonicParsing="false" onMouseClicked="#pneEditPayment_OnMouseClicked" prefHeight="90.0" prefWidth="150.0" style="-fx-background-color: #A1825E;" AnchorPane.bottomAnchor="190.0" AnchorPane.leftAnchor="640.0" AnchorPane.rightAnchor="110.0" AnchorPane.topAnchor="177.0">
          <graphic>
             <AnchorPane prefHeight="80.0" prefWidth="143.0">
                <children>
@@ -111,7 +111,7 @@
             </AnchorPane>
          </graphic>
       </Button>
-      <Button layoutX="372.0" layoutY="310.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="150.0" style="-fx-background-color: #A1825E;" AnchorPane.bottomAnchor="57.0" AnchorPane.leftAnchor="375.0" AnchorPane.rightAnchor="375.0" AnchorPane.topAnchor="310.0">
+      <Button layoutX="372.0" layoutY="310.0" mnemonicParsing="false" onMouseClicked="#pneManageUsers_OnMouseClicked" prefHeight="90.0" prefWidth="150.0" style="-fx-background-color: #A1825E;" AnchorPane.bottomAnchor="57.0" AnchorPane.leftAnchor="375.0" AnchorPane.rightAnchor="375.0" AnchorPane.topAnchor="310.0">
          <graphic>
             <AnchorPane prefHeight="80.0" prefWidth="143.0">
                <children>
