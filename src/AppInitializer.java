@@ -28,7 +28,7 @@ public class AppInitializer extends Application {
         //mainScene.setFill(Color.TRANSPARENT);
         //primaryStage.initStyle(StageStyle.TRANSPARENT);
 
-        primaryStage.setTitle("Payment System");
+        //primaryStage.setTitle("Payment System");
         primaryStage.centerOnScreen();
         primaryStage.show();
 

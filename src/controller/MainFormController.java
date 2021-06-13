@@ -4,6 +4,7 @@ import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.control.Label;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import javafx.stage.Window;
@@ -13,6 +14,7 @@ import java.io.IOException;
 public class MainFormController {
     public AnchorPane pneStage;
     public Label lblTitle;
+    public ImageView imgNav;
 
     public void initialize() {
 

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
@@ -14,6 +16,11 @@
                   <Font size="16.0" />
                </font>
             </Label>
+            <ImageView fx:id="imgNav" fitHeight="31.0" fitWidth="31.0" layoutX="14.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="14.0">
+               <image>
+                  <Image url="@../assets/openmoji_return-back-button.png" />
+               </image>
+            </ImageView>
          </children>
       </AnchorPane>
    </children>
