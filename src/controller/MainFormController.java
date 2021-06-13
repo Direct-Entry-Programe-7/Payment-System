@@ -13,9 +13,10 @@ public class MainFormController {
 
     }
 
-    public void navigate(){
+    public void navigate(String url){
         try {
-            Parent root = FXMLLoader.load(this.getClass().getResource("/view/DashBoardForm.fxml"));
+            Parent root = FXMLLoader.load(this.getClass().getResource(url));
+            pneStage.getChildren().clear();
             pneStage.getChildren().add(root);
         } catch (IOException e) {
             e.printStackTrace();
