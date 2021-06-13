@@ -21,14 +21,14 @@ public class AppInitializer extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(this.getClass().getResource("/view/MainForm.fxml"));
         Parent root = fxmlLoader.load();
         Scene mainScene = new Scene(root);
+        primaryStage.setScene(mainScene);
         MainFormController ctrl = fxmlLoader.getController();
-        ctrl.navigate("/view/DashBoardForm.fxml");
+        ctrl.navigate("IJSE Payment System","/view/DashBoardForm.fxml");
         mainScene.setUserData(ctrl);
         //mainScene.setFill(Color.TRANSPARENT);
         //primaryStage.initStyle(StageStyle.TRANSPARENT);
-        primaryStage.setScene(mainScene);
+
         primaryStage.setTitle("Payment System");
-        primaryStage.setResizable(false);
         primaryStage.centerOnScreen();
         primaryStage.show();
 

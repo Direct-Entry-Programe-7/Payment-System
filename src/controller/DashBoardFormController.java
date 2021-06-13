@@ -17,11 +17,12 @@ public class DashBoardFormController {
     }
 
     public void btnAddPayment_OnMouseClicked(MouseEvent mouseEvent) {
+        navigate("Add Payment" , "/view/AddPayment.fxml");
     }
 
     public void navigate(String title , String url){
         MainFormController ctrl = (MainFormController) btnAddPayment.getScene().getUserData();
-        ctrl.navigate(url);
+        ctrl.navigate(title, url);
     }
 
 
