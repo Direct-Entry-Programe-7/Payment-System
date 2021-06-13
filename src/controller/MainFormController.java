@@ -12,15 +12,20 @@ import javafx.stage.Window;
 import java.io.IOException;
 
 public class MainFormController {
+
+    public static  final int NAV_ICON_BACK = 0;
+
     public AnchorPane pneStage;
     public Label lblTitle;
     public ImageView imgNav;
+    public ImageView imgMinimize;
+    public ImageView imgClose;
 
     public void initialize() {
 
     }
 
-    public void navigate(String title ,String url){
+    public void navigate(String title ,String url, int icon){
         try {
             Parent root = FXMLLoader.load(this.getClass().getResource(url));
             pneStage.getChildren().clear();

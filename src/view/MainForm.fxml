@@ -16,9 +16,19 @@
                   <Font size="16.0" />
                </font>
             </Label>
-            <ImageView fx:id="imgNav" fitHeight="31.0" fitWidth="31.0" layoutX="14.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="14.0">
+            <ImageView fx:id="imgNav" fitHeight="31.0" fitWidth="31.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="14.0">
                <image>
-                  <Image url="@../assets/openmoji_return-back-button.png" />
+                  <Image url="@../assets/eva_arrow-ios-back-fill.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgClose" fitHeight="31.0" fitWidth="31.0" layoutX="854.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@../assets/clarity_close-line.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgMinimize" fitHeight="31.0" fitWidth="31.0" layoutX="813.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="55.0" AnchorPane.topAnchor="4.0">
+               <image>
+                  <Image url="@../assets/ic_round-minimize.png" />
                </image>
             </ImageView>
          </children>

@@ -22,7 +22,7 @@ public class DashBoardFormController {
 
     public void navigate(String title , String url){
         MainFormController ctrl = (MainFormController) btnAddPayment.getScene().getUserData();
-        ctrl.navigate(title, url);
+        ctrl.navigate(title, url , MainFormController.NAV_ICON_BACK);
     }
 
 
