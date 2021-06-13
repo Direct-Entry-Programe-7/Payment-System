@@ -23,11 +23,11 @@ public class AppInitializer extends Application {
         Scene mainScene = new Scene(root);
         primaryStage.setScene(mainScene);
         MainFormController ctrl = fxmlLoader.getController();
-        ctrl.navigate("IJSE Payment System","/view/DashBoardForm.fxml", MainFormController.NAV_ICON_BACK);
+        ctrl.navigate("IJSE Payment System","/view/DashBoardForm.fxml", MainFormController.NAV_ICON_NONE);
         mainScene.setUserData(ctrl);
-        mainScene.setFill(Color.TRANSPARENT);
+        //mainScene.setFill(Color.TRANSPARENT);
         //primaryStage.initStyle(StageStyle.TRANSPARENT);
-        //primaryStage.setResizable(false);
+         primaryStage.setResizable(false);
 
         //primaryStage.setTitle("Payment System");
         primaryStage.centerOnScreen();
