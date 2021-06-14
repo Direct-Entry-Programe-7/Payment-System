@@ -2,6 +2,7 @@ package controller;
 
 import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
+import util.NavActionListener;
 
 import java.io.IOException;
 
@@ -16,12 +17,6 @@ public class DashBoardFormController {
     public void btnAddPayment_OnMouseClicked(MouseEvent mouseEvent) {
         navigate("Add Payment" , "/view/AddPaymentForm.fxml");
     }
-
-    public void navigate(String title , String url){
-        MainFormController ctrl = (MainFormController) btnAddPayment.getScene().getUserData();
-        ctrl.navigate(title, url , MainFormController.NAV_ICON_BACK);
-    }
-
 
     public void pneManageUsers_OnMouseClicked(MouseEvent mouseEvent) {
         navigate("Manage Users" , "/view/ManageUserForm.fxml");
@@ -41,6 +36,17 @@ public class DashBoardFormController {
 
     public void pneSearchPayment_OnMouseClicked(MouseEvent mouseEvent) {
         navigate("Search Payment" , "/view/SearchPaymentForm.fxml");
+    }
+
+    public void navigate(String title , String url){
+        MainFormController ctrl = (MainFormController) btnAddPayment.getScene().getUserData();
+        ctrl.navigate(title, url, MainFormController.NAV_ICON_BACK, new NavActionListener() {
+            @Override
+            public void handle() {
+                ctrl.navigate("IJSE Payment System", "/view/DashBoardForm.fxml", MainFormController.NAV_ICON_NONE);
+
+            }
+        });
     }
 }
 
